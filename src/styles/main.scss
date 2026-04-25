@@ -1,0 +1,11 @@
+@use './variables';
+@use './mixins';
+@use './typography';
+@use './base';
+
+.main-container {
+   margin: 0 auto;
+   width: 70vw;
+}
+
+//22 22

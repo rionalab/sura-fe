@@ -1,0 +1,16 @@
+@import '../../styles/mixins';
+
+.primary {
+   background-color: var(--primary-color);
+   color: var(--text-color);
+   padding: $spacing-unit * 1.5 $spacing-unit * 3;
+   border: none;
+   border-radius: $border-radius;
+   cursor: pointer;
+
+   @include flex-center;
+
+   &:hover {
+      background-color: darken(var(--primary-color), 10%);
+   }
+}
