@@ -3,7 +3,8 @@ import type { NextConfig } from 'next'
 const nextConfig: NextConfig = {
    output: 'export', // paksa static
    basePath: '/sura-fe', // nama repo
-   assetPrefix: '/sura-fe/', // biar asset nggak 404
+   assetPrefix: '/sura-fe/', // biar asset nggak 404,
+   trailingSlash: true,
    images: {
       unoptimized: true, // next/image harus dimatikan optimasinya
    },

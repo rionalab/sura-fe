@@ -8,8 +8,8 @@
       "start": "next start",
       "lint": "eslint .",
       "format": "prettier --write .",
-      "export": "next export",
-      "deploy": "gh-pages -d out"
+      "deploy": "gh-pages -d out",
+      "predeploy": "pnpm run build"
    },
    "dependencies": {
       "@ant-design/icons": "~6.1.1",
