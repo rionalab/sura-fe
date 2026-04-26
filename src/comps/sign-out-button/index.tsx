@@ -1,6 +1,5 @@
 'use client'
 
-import { signOutAction } from '@/src/actions/auth-action'
 import { Button } from 'antd'
 import { useState } from 'react'
 
@@ -8,7 +7,7 @@ export default function SignOutButton() {
    const [loading, setLoading] = useState(false)
 
    return (
-      <form action={signOutAction}>
+      <form>
          <Button
             loading={loading}
             onClick={() => setLoading(true)}

@@ -4,7 +4,7 @@ import Google from 'next-auth/providers/google'
 import Credentials from 'next-auth/providers/credentials'
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-   providers: [GitHub, Google, Credentials],
+   providers: [],
    callbacks: {
       async signIn({ account, profile }) {
          if (account?.provider === 'google') {
@@ -18,13 +18,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       async jwt({ token, user, profile, account }) {
          // user hanya ada saat login pertama kali
          if (user) {
-            if (account?.provider === 'github') {
-               token.avatar = profile?.avatar_url
-            }
+            // if (account?.provider === 'github') {
+            //    token.avatar = profile?.avatar_url
+            // }
 
-            if (account?.provider === 'google') {
-               token.avatar = profile?.picture
-            }
+            // if (account?.provider === 'google') {
+            //    token.avatar = profile?.picture
+            // }
 
             // const dbUser = await prisma.user.findUnique({
             //    where: { email: user.email! },

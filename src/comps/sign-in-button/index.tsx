@@ -1,11 +1,10 @@
 'use client'
 
-import { signInAction } from '@/src/actions/auth-action'
 import { Button } from 'antd'
 
 export default function SignInButton() {
    return (
-      <form action={signInAction}>
+      <form>
          <Button htmlType="submit">Sign in</Button>
       </form>
    )
