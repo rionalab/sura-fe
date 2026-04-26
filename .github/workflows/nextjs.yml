@@ -21,22 +21,20 @@ jobs:
          - name: Checkout
            uses: actions/checkout@v4
 
-         # 1. Install PNPM terlebih dahulu
+         # 1. Pasang PNPM secara eksplisit
          - name: Install pnpm
            uses: pnpm/action-setup@v4
            with:
-              version: 9 # Atau sesuaikan dengan versi yang kamu pakai di lokal
+              version: 9
 
          - name: Setup Node
            uses: actions/setup-node@v4
            with:
               node-version: '20'
-              cache: 'pnpm' # Menggunakan pnpm cache untuk kecepatan
+              cache: 'pnpm'
 
          - name: Setup Pages
            uses: actions/configure-pages@v5
-           with:
-              static_site_generator: next
 
          - name: Install dependencies
            run: pnpm install
@@ -58,4 +56,4 @@ jobs:
       steps:
          - name: Deploy to GitHub Pages
            id: deployment
-           uses: actions/deploy-pages@v4
+           uses: actions/deploy-pages@v5
