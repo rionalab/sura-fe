@@ -8,4 +8,17 @@
    width: 70vw;
 }
 
+@keyframes pulse {
+   0%,
+   100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 2px rgba(52, 168, 83, 0.25);
+   }
+
+   50% {
+      transform: scale(1.35);
+      box-shadow: 0 0 0 10px rgba(52, 168, 83, 0);
+   }
+}
+
 //22 22

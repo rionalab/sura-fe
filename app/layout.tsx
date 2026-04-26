@@ -5,7 +5,7 @@ import { AntdRegistry } from '@ant-design/nextjs-registry'
 
 const roboto = Roboto({
    subsets: ['latin'],
-   weight: ['400', '700'],
+   weight: ['300', '400', '700'],
    display: 'swap',
 })
 
