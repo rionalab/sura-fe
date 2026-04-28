@@ -1,0 +1,293 @@
+.root {
+   min-height: 100vh;
+   padding: 44px 24px 64px;
+   background:
+      radial-gradient(
+         circle at 16% 16%,
+         rgba(17, 17, 17, 0.045),
+         transparent 25%
+      ),
+      radial-gradient(
+         circle at 88% 18%,
+         rgba(52, 168, 83, 0.07),
+         transparent 25%
+      ),
+      #ffffff;
+}
+
+.content {
+   width: min(100%, 860px);
+   margin: 0 auto;
+   margin-top: 10vh;
+}
+
+.header {
+   display: grid;
+   justify-items: start;
+   gap: 26px;
+   margin-bottom: 30px;
+}
+
+.brand {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   font-size: 16px;
+   font-weight: 700;
+   color: #111111;
+}
+
+.brandMark {
+   display: grid;
+   width: 36px;
+   height: 36px;
+   place-items: center;
+   color: #ffffff;
+   background: #111111;
+   border-radius: 50%;
+}
+
+.header h1 {
+   margin: 0;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.1;
+   color: #070707;
+}
+
+.description {
+   max-width: 520px;
+   margin-top: 10px;
+   font-size: 15px;
+   line-height: 1.6;
+   color: #4f5b6f;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(5, minmax(0, 1fr));
+   gap: 24px;
+}
+
+.interestButton {
+   position: relative;
+   min-height: 154px;
+   display: grid;
+   justify-items: center;
+   align-content: center;
+   gap: 12px;
+   width: 100%;
+   padding: 18px 12px;
+   font: inherit;
+   color: #111111;
+   cursor: pointer;
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #dde2ea, #dde2ea) border-box;
+   border: 1px solid transparent;
+   border-radius: 8px;
+   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+   transition:
+      border-color 0.18s ease,
+      box-shadow 0.18s ease,
+      transform 0.18s ease,
+      background 0.18s ease;
+}
+
+.interestButton:hover {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #fff, #ddd) border-box;
+   box-shadow: 0 16px 34px rgba(17, 17, 17, 0.12);
+   transform: translateY(-2px);
+}
+
+.selected {
+   border-width: 1px;
+   box-shadow: 0 16px 34px rgba(17, 17, 17, 0.14);
+}
+
+.iconBox {
+   display: grid;
+   width: 54px;
+   height: 54px;
+   place-items: center;
+   color: #555;
+   background: #f3f4f6;
+   border: 1px solid #eee;
+   border-radius: 16px;
+   font-size: 25px;
+}
+
+.selected .iconBox {
+   color: #111;
+   // background: #111111;
+}
+
+.interestButton strong {
+   font-size: 15px;
+   font-weight: 700;
+   line-height: 1.2;
+   text-align: center;
+}
+
+.people {
+   padding: 6px 10px;
+   color: #475467;
+   background: #f2f4f7;
+   border-radius: 999px;
+   font-size: 12px;
+   font-weight: 650;
+   white-space: nowrap;
+}
+
+.selected .people {
+   color: #111111;
+   background: #e7e7e7;
+}
+
+.selected.toneTech {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #23d5ff, #4776ff, #9d4edd) border-box;
+}
+
+.selected.toneBusiness {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #ffd166, #ff7a59, #ef476f) border-box;
+}
+
+.selected.toneEducation {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #7bdff2, #80ed99, #caffbf) border-box;
+}
+
+.selected.toneHealth {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #06d6a0, #64dfdf, #48bfe3) border-box;
+}
+
+.selected.toneMusic {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #ff7eb6, #ff65a3, #7afcff) border-box;
+}
+
+.selected.toneFilm {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #f72585, #7209b7, #3a86ff) border-box;
+}
+
+.selected.toneSport {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #ffbe0b, #fb5607, #ff006e) border-box;
+}
+
+.selected.toneTravel {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #00bbf9, #00f5d4, #fee440) border-box;
+}
+
+.selected.toneGame {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #a3ff12, #00f5d4, #00bbf9) border-box;
+}
+
+.selected.toneLifestyle {
+   background:
+      linear-gradient(#ffffff, #ffffff) padding-box,
+      linear-gradient(135deg, #ff9f1c, #ffbf69, #cbf3f0) border-box;
+}
+
+.selectAll {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+   margin-top: 22px;
+   color: #667085;
+   font-size: 14px;
+}
+
+.selectAll :global(.ant-checkbox-wrapper) {
+   font-weight: 650;
+   color: #111111;
+}
+
+.selectAll :global(.ant-checkbox-checked .ant-checkbox-inner),
+.selectAll :global(.ant-checkbox-indeterminate .ant-checkbox-inner) {
+   background: #111111;
+   border-color: #111111;
+}
+
+.selectAll :global(.ant-checkbox-wrapper:hover .ant-checkbox-inner),
+.selectAll :global(.ant-checkbox:hover .ant-checkbox-inner) {
+   border-color: #111111;
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+   // font-s
+   margin-top: 28px;
+   color: #667085;
+}
+
+.nextButton {
+   min-width: 156px;
+   height: 46px;
+   color: #ffffff;
+   background: #111111;
+   border-color: #111111;
+   border-radius: 999px;
+   box-shadow: none;
+}
+
+.nextButton:global(.ant-btn-primary:not(:disabled):hover) {
+   background: #2a2a2a;
+   border-color: #2a2a2a;
+}
+
+@media (max-width: 920px) {
+   .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+}
+
+@media (max-width: 600px) {
+   .root {
+      padding: 28px 18px 44px;
+   }
+
+   .header h1 {
+      font-size: 32px;
+   }
+
+   .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+   }
+
+   .interestButton {
+      min-height: 146px;
+   }
+
+   .selectAll,
+   .footer {
+      align-items: stretch;
+      flex-direction: column;
+   }
+
+   .footer :global(.ant-btn) {
+      width: 100%;
+   }
+}

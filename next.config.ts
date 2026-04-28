@@ -1,12 +1,14 @@
 import type { NextConfig } from 'next'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig: NextConfig = {
-   output: 'export', // paksa static
-   basePath: '/sura-fe', // nama repo
-   assetPrefix: '/sura-fe/', // biar asset nggak 404,
+   output: isProd ? 'export' : undefined,
+   basePath: isProd ? '/sura-fe' : '',
+   assetPrefix: isProd ? '/sura-fe/' : '',
    trailingSlash: true,
    images: {
-      unoptimized: true, // next/image harus dimatikan optimasinya
+      unoptimized: true,
    },
 }
 

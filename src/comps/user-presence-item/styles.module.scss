@@ -1,0 +1,136 @@
+.root {
+   min-width: 0;
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   width: 100%;
+}
+
+.avatar {
+   position: relative;
+   display: grid;
+   width: 40px;
+   height: 40px;
+   flex: 0 0 auto;
+   place-items: center;
+   color: #344054;
+   background: #e4e7ec;
+   border-radius: 50%;
+   font-weight: 700;
+   transition:
+      color 160ms ease,
+      background 160ms ease;
+}
+
+.gradientPink {
+   --avatar-hover-bg: linear-gradient(135deg, #ff2bd6, #ff7a18);
+}
+
+.gradientBlue {
+   --avatar-hover-bg: linear-gradient(135deg, #2563eb, #00e5ff);
+}
+
+.gradientGreen {
+   --avatar-hover-bg: linear-gradient(135deg, #00c853, #c6ff00);
+}
+
+.gradientOrange {
+   --avatar-hover-bg: linear-gradient(135deg, #ff3d00, #ffd600);
+}
+
+.gradientPurple {
+   --avatar-hover-bg: linear-gradient(135deg, #7c3aed, #f000b8);
+}
+
+.gradientCyan {
+   --avatar-hover-bg: linear-gradient(135deg, #00b8d4, #00ff85);
+}
+
+.root:hover .avatar {
+   color: #ffffff;
+   background: var(--avatar-hover-bg, #111111);
+}
+
+.avatar img {
+   width: 100%;
+   height: 100%;
+   border-radius: inherit;
+   object-fit: cover;
+}
+
+.statusDot {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 12px;
+   height: 12px;
+   border: 2px solid #ffffff;
+   border-radius: 50%;
+}
+
+.onlineDot {
+   background: #16a34a;
+}
+
+.offlineDot {
+   background: #a4a7ae;
+}
+
+.content {
+   min-width: 0;
+   flex: 1;
+}
+
+.topLine,
+.bottomLine {
+   min-width: 0;
+   display: flex;
+   align-items: center;
+}
+
+.topLine {
+   justify-content: space-between;
+   gap: 10px;
+}
+
+.topLine strong {
+   min-width: 0;
+   overflow: hidden;
+   color: #111111;
+   font-size: 14px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.meta {
+   flex: 0 0 auto;
+   color: #98a2b3;
+   font-size: 12px;
+}
+
+.bottomLine {
+   gap: 6px;
+   margin-top: 3px;
+}
+
+.subtitle {
+   min-width: 0;
+   flex: 1;
+   overflow: hidden;
+   color: #667085;
+   font-size: 12px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.typingSubtitle {
+   color: #16a34a;
+   font-style: italic;
+}
+
+.suffix {
+   display: flex;
+   flex: 0 0 auto;
+   align-items: center;
+   gap: 4px;
+}
